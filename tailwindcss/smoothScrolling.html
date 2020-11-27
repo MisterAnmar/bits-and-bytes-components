@@ -1,0 +1,27 @@
+<li class="mx-3"><a href="#hero-section" class="nav-item top-nav-link-active">Home</a></li>
+<li class="mx-3"><a href="#about-section" class="nav-item top-nav-link">About</a></li>
+
+
+<section id="hero-section"></div>
+<section id="about-section"></div>
+
+<script>
+  // SMOOTH SCROLLING
+  // TODO Class CHanges of selected
+  $('a[href*="#"]:not([href="#"])').on('click', function (e) {
+    // $('.nav-item').removeClass('top-nav-link-active');
+    // $('.nav-item').addClass('top-nav-link');
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      let target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      // $(this).addClass('top-nav-link-active');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1200);
+        return false;
+      }
+    }
+  });
+  // END
+</script>
