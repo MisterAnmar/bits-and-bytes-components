@@ -1,5 +1,5 @@
 # bits-and-bytes-components
-Basic simple components
+Basic components
 
 
 
