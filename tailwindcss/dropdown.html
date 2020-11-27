@@ -1,0 +1,24 @@
+<div class="relative">
+  <button class="flex items-center justify-center px-2 py-2 mx-2 text-gray-100 duration-300 ease-in-out bg-red-400 rounded-md shadow-sm md:mt-0 hover:bg-red-500 focus:outline-none" id="menu-btn">
+    <svg class="w-3.5 h-3.5 bi" fill="currentColor">
+      <use xlink:href="./assets/icons/bootstrap-icons.svg#globe2"/>
+    </svg>
+    <span class="w-1"></span>
+    <svg class="w-3 h-3 bi" fill="currentColor">
+      <use xlink:href="./assets/icons/bootstrap-icons.svg#caret-down"/>
+    </svg>
+  </button>
+  <div class="absolute flex-col hidden w-32 p-2 mt-1 text-sm bg-white rounded shadow-lg" id="dropdown">
+    <a href="#testing1" class="block px-4 py-1 font-medium transition duration-300 ease-in-out border-2 border-transparent rounded-md nav-item hover:text-gray-700 hover:border-red-300 hover:shadow-sm">English</a>
+    <a href="#testing2" class="block px-4 py-1 font-medium transition duration-300 ease-in-out border-2 border-transparent rounded-md nav-item hover:text-gray-700 hover:border-red-300 hover:shadow-sm">عربي</a>
+    <a href="#testing3" class="block px-4 py-1 font-medium transition duration-300 ease-in-out border-2 border-transparent rounded-md nav-item hover:text-gray-700 hover:border-red-300 hover:shadow-sm">كردي</a>
+  </div>
+</div> 
+<script>
+  $(function () {
+    $('#menu-btn').on('click', function (e) {
+      $('#dropdown').toggleClass('hidden flex');
+    });
+    
+  });
+</script>  
