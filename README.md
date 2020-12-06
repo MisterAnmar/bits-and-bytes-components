@@ -9,3 +9,7 @@ Basic components
 -  https://icons.getbootstrap.com/
 -  https://heroicons.com/
 -  http://www.heropatterns.com/
+
+
+# Databases 
+- https://archive.org/download/stackexchange
