@@ -11,5 +11,6 @@ Basic components
 -  http://www.heropatterns.com/
 
 
-# Databases 
+# Databases & APIs
 - https://archive.org/download/stackexchange
+- https://api.emsidata.com/
